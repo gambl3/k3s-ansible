@@ -6,6 +6,7 @@
   roles:
     - role: prereq
     - role: download
+    #- role: reset
 
 - hosts: master
   become: yes

@@ -36,7 +36,9 @@
     - /etc/rancher/k3s
     - /var/lib/kubelet
     - /var/lib/rancher/k3s
+    - ~{{ ansible_user }}/.kube
 
 - name: daemon_reload
   systemd:
     daemon_reload: yes
+
